@@ -4,11 +4,11 @@
   "description": "![Design preview for the GitHub user search app coding challenge](./preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "start": "node ./server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./server.js",
+    "test": "jest"
   },
   "repository": {
-    "type": "git",
+    "type": "module",
     "url": "git+https://github.com/TomGroombridge/github-app-framework.git"
   },
   "author": "",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/TomGroombridge/github-app-framework#readme",
   "dependencies": {
     "axios": "^0.26.1",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "jest": "^27.5.1"
   }
 }

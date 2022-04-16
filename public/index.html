@@ -4,10 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frontend Mentor | GitHub user search app</title>
+  <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-<h1>Hello World</h1>
+  <div class="header">
+    <h1>devfinder</h1>
+    <div class="mode">DARK</div>
+</div>
+<div class="search">
+<input type="text"/>
+<button id="search-button">Search</button>
+</div>
+<div class="container">
+  <div class="icon">Icon</div>
+  <div class="account-header">
+    <div class="name-bio">
+      <div class="name" id="name"></div>
+      <div class="handle" id="handle"></div>
+      <div class="bio" id="bio"></div>
+      </div>
+    <div class="join-date" id="join-date"></div>
+  </div>
+  <div class="empty"></div>
+  <div class="stats-container">
+    <div class="stats-header">Repos</div>
+    <div class="stats-header">Followers</div>
+    <div class="stats-header">Following</div>
+    <div class="stats" id="repos"></div>
+    <div class="stats" id="followers"></div>
+    <div class="stats" id="following"></div>
+</div>
+  <div class="empty"></div>
+  <div class="socials">
+    <div class="location" id="location"></div>
+    <div class="twitter" id="twitter"></div>
+    <div class="blog" id="blog"></div>
+    <div class="company" id ="company"></div>
+  </div>
+</div>
+
+
   
-<script type="client.js"></script>
+<script src="client.js"></script>
 </body>
 </html>
