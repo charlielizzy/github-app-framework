@@ -1,16 +1,16 @@
-const OCTOCAT_DATA = {
+module.exports = OCTOCAT_DATA = {
   data: {
-    icon: "https://avatars.githubusercontent.com/u/583231?v=4",
+    avatar_url: "https://avatars.githubusercontent.com/u/583231?v=4",
     name: "The Octocat",
-    username: "octocat",
+    login: "octocat",
     bio: null,
     company: "@github",
     blog: "https://github.blog",
     join_date: "2011-01-25T18:44:36Z",
     followers: 5548,
     following: 9,
-    repos: 8,
+    public_repos: 8,
     location: "San Francisco",
-    twitter: null,
+    twitter_username: null,
   },
 };

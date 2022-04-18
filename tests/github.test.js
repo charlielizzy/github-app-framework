@@ -7,13 +7,14 @@ jest.mock("axios");
 describe("GitHub API getUserData method", () => {
   it("should return back octocat's data", async () => {
     axios.get.mockResolvedValue(OCTOCAT_DATA);
-    const data = await new GitAccount().getUserData("octocat");
-    expect(data.repos).toEqual(8);
+    const response = await new GitAccount().getUserData("octocat");
+    console.log(response);
+    expect(response.repos).toEqual(8);
   });
 
-  //   it("should throw an error if API call fails", async () => {
-  //     axios.get.mockRejectedValue(new Error());
-  //     const account = new GitAccount();
-  //     await expect(account.getUserData("octocat")).rejects.toThrow("new error");
-  //   });
+  it("should throw an error if API call fails", async () => {
+    axios.get.mockRejectedValue(new Error());
+    const account = new GitAccount();
+    await expect(account.getUserData("octocat")).rejects.toThrow("new error");
+  });
 });
